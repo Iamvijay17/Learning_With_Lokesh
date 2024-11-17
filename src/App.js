@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Btn1 } from "./components/btn";
 
 function App() {
+  const handleClick = () => {
+    alert('Hi lokesh')
+  };
+
   return (
-    <div className="App">
-      <h1>Hi lokesh</h1>
+    <div>
+      <Btn1 label="submit" click={handleClick} BtnColor="red" />
+      <Btn1 label="login" BtnColor="green"/>
     </div>
   );
 }
